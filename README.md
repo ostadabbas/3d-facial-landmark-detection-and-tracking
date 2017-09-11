@@ -9,8 +9,7 @@ As for video processing, “landmark_detection_video.py” shows the landmark tr
 
 
 
-For further inquiry please contact: 
-
+## For further inquiry please contact: 
 Sarah Ostadabbas, PhD
 Electrical & Computer Engineering Department
 Northeastern University, Boston, MA 02115
