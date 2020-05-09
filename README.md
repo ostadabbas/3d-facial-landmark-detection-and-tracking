@@ -1,12 +1,39 @@
 # Landmark Detection and Tracking
 
-We use two open source library in our project. You need to download and install them before running our scripts. One is Dlib (See [http://dlib.net](http://dlib.net) for downloading and installation). Another one is eos, which is a lightweight 3D Morphable Face Model fitting library.(The link is https://github.com/patrikhuber/eos/releases.)
+The main objective of this code is to track 68 facial landmarks from each frame of a video.
 
-## Sample code
+## Contents   
+*  [Requirements](#Requirements)
+*  [Preprocessing](#Preprocessing)
+*  [Running the Code](#Running the Code)
 
-Run the code “landmark_detection_img.py”. It will show the landmark detection of a sample image.
-As for video processing, “landmark_detection_video.py” shows the landmark tracking in a sample video.
 
+### Requirements   
+Two libraries need to be installed:
+
+* [Dlib 19.10.0](http://dlib.net) for face detection and 2D facial landmarks tracking.
+        Use 'pip install dlib==19.10.0' to install this library directly.
+* [EOS 1.0.1](https://github.com/patrikhuber/eos/releases) which is a lightweight 3D Morphable Face Model fitting library.
+        Use 'pip install eos-py==1.0.1' to install this library directly.
+
+### Running the Code
+Run `landmark_detection_video.py` to get the results.
+
+* ##### input
+    some videos as input files, can be put into the `./videos` folder. Of course, the format of video file could not only be `MP4`,
+    but also `AVI` or `MOV`.
+    
+    If we want to change the path of the videos, we can find a function named `main` in the end of `landmark_detection_video.py`,
+    and change the path `./videos` to you want. 
+* ##### output
+    Some folders, named the video files' names, will be generated under root path after completing landmarks tracking. In each
+    folder, there are 5 files:
+        (1) "output.avi" (synchronized with the original video but filtered non-detected frames)
+        (2) "3d_landmarks.npy" (3D frontalised facial landmarks positions over time)
+        (3) "3d_landmarks_pose.npy" (3D facial landmarks with head pose over time)
+        (4) "2d_landmarks.npy" (2D facial landmarks positions over time)
+        (5) "NonDetected" (frames that ficial landmarks cannot be detected)
+    
 ## Citation
 If you find our work useful in your research please consider citing our paper:
 
