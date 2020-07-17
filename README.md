@@ -6,7 +6,7 @@ The main objective of this code is to track 68 facial landmarks from each frame 
 *  [Requirements](#Requirements)
 *  [Video Requirements](#Video Requirements)
 *  [Running the Code](#Running the Code)
-*  [Application](
+*  [Application](#Application)
 
 
 
