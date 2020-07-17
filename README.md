@@ -4,8 +4,8 @@ The main objective of this code is to track 68 facial landmarks from each frame 
 
 ## Contents   
 *  [Requirements](#Requirements)
-*  [Video Requirements](#Video-Requirements)
-*  [Running the Code](#Running-the-Code)
+*  [Video Requirements](#Video Requirements)
+*  [Running the Code](#Running the Code)
 *  [Application](#Application)
 
 
@@ -54,7 +54,7 @@ By leveraging this facial landmarks tracking technology to extract the movement 
 More details is in the paper ["Infant Contact-less Non-Nutritive Sucking Pattern Quantification via Facial Gesture Analysis"](https://arxiv.org/pdf/1906.01821.pdf).
 
 ## Citation
-If you find our work useful in your research please consider citing our papers:
+If you find our work useful in your research, please consider citing our papers:
 
 @INPROCEEDINGS{facial2018yin,
 
@@ -65,11 +65,13 @@ If you find our work useful in your research please consider citing our papers:
   
 }
 
-@article{huang2019infant,
-  title={Infant Contact-less Non-Nutritive Sucking Pattern Quantification via Facial Gesture Analysis},
-  author={Huang, Xiaofei and Martens, Alaina and Zimmerman, Emily and Ostadabbas, Sarah},
-  journal={arXiv preprint arXiv:1906.01821},
-  year={2019}
+@INPROCEEDINGS{huang2019infant,
+
+  title        = {Infant Contact-less Non-Nutritive Sucking Pattern Quantification via Facial Gesture Analysis},
+  author       = {Huang, Xiaofei and Martens, Alaina and Zimmerman, Emily and Ostadabbas, Sarah},
+  booktitle    = {CVPR2019 Workshop on Augmented Human (VUHCS2019).arXiv preprint arXiv:1906.01821},
+  year         = {2019}
+  
 }
 
 ## For further inquiry please contact: 
