@@ -95,7 +95,7 @@ def visualize_facial_landmarks(image, bb, shape, background=1, highlightPt=[]):
     #    cv2.line(overlay, (x1,y1), (x2,y2), (0, 255, 0), 4)
 
     # Highlight point
-        for i in range(3):
+        for i in range(len(highlightPt)):
             (x, y) = shape[highlightPt[i]]
             overlay[y, x] = (0, 0, 0)
             cv2.circle(overlay, (x, y), 8, color[i], -1)

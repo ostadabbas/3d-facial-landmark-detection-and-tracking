@@ -19,21 +19,16 @@ im = io.imread("./dataSample/Yu.jpg")
 #np.savetxt('landmark_result_Yu.txt', coords)
 
 
-########################## normalize ###############################
-desiredEyePixels = 150
-(im_norm, landmarks_norm) = helpers.normalize(im, coords, desiredEyePixels)
-
-
 ################### output landmark coordinates ####################
 for i in [0,16,36,43]:#np.arange(68):
-    print "The", i,"th landmark:", coords[i]
+    print("The " +  str(i) + "th landmark:")
+    print(coords[i])
   
 
 ######################## visualization #############################
-highlights = [22,33,48]
+highlights = [16,36,43]
 outImg = helpers.visualize_facial_landmarks(im, bb, coords, 1,highlights)
 outImg_noBackground = helpers.visualize_facial_landmarks(im, bb, coords, 0,highlights)
-outImg_norm = helpers.visualize_facial_landmarks(im_norm, bb, landmarks_norm, 1,highlights)
 
 plt.subplot(121), plt.imshow(outImg)
 plt.subplot(122), plt.imshow(outImg_noBackground)
@@ -42,7 +37,6 @@ plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
 fig = plt.figure()
 outImg1 = helpers.visualize_facial_landmarks(im, bb, coords, 1,[])
 plt.imshow(outImg1)
-plt.imshow(outImg_norm)
 
 plt.show()
 
